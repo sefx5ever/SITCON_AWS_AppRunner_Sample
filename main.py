@@ -21,7 +21,7 @@ def check_in():
         aws_access_key_id = os.environ['AWS_ACCESS_KEY_ID'],
         aws_secret_access_key = os.environ['AWS_SECRET_ACCESS_KEY']
     )
-    table = dynamodb.Table('sitcon-apprunner-db')
+    table = dynamodb.Table('sitcon-aws-apprunner-wyne-db')
 
     datetime = request.args.get('datetime')
     name = request.args.get('name')
